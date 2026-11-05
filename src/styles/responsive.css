@@ -1,161 +1,106 @@
-/* ========================================================
-   DINAVISA Paraguay - Responsive Styles
-   ======================================================== */
+/* DINAVISA Paraguay - Responsive CSS */
 
-/* Mobile First Adjustments (under 480px) */
-@media (max-width: 480px) {
-  .header-inner {
-    padding: 10px 14px;
+@media (min-width: 600px) {
+  body {
+    padding: 24px 0;
+    background: #eef1f5;
   }
 
-  .brand-text {
+  .device-container {
+    width: 494px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(21, 34, 56, 0.16);
+    border: 1px solid #dce2e9;
+  }
+
+  .mobile-top, .header-rule, .browser-bottom-bar {
+    width: 100%;
+  }
+
+  .page {
+    min-height: 852px;
+  }
+}
+
+@media (max-width: 494px) {
+  .device-container {
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .page {
+    min-height: calc(100vh - 129px);
+  }
+}
+
+@media (max-width: 380px) {
+  .top-line {
+    top: 54px;
+    font-size: 10px;
+  }
+
+  .settings {
+    top: 42px;
+    width: 44px;
+    height: 48px;
+  }
+
+  .settings i {
     font-size: 20px;
   }
 
-  .brand-suffix {
-    font-size: 17px;
+  .masthead {
+    top: 102px;
   }
 
-  .portal-badge-indicator {
-    padding: 3px 8px;
+  .ms-badge {
+    top: 151px;
+    width: 62px;
+    height: 62px;
+    font-size: 24px;
   }
 
-  .indicator-label {
+  .product-card {
+    top: 188px;
+    min-height: 560px;
+    padding: 27px 12px 18px;
+  }
+
+  .product-type {
+    font-size: 12px;
+  }
+
+  .registration {
+    margin-top: 28px;
+    font-size: 15px;
+  }
+
+  .company {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  .details {
+    margin-top: 27px;
+    font-size: 13px;
+  }
+
+  .details p {
+    margin-bottom: 20px;
+  }
+
+  .documents {
+    margin-top: 27px;
+  }
+
+  .doc-copy {
+    font-size: 10px;
+  }
+
+  .doc-row.notice .doc-copy {
     font-size: 9px;
-  }
-
-  .portal-subnav-inner {
-    padding: 8px 14px;
-  }
-
-  .portal-body-wrapper {
-    padding: 18px 14px 40px;
-    gap: 18px;
-  }
-
-  .gov-branding-container {
-    gap: 12px;
-  }
-
-  .gov-divider {
-    display: none;
-  }
-
-  .gov-logo-block {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .product-card {
-    padding: 30px 16px 18px;
-  }
-
-  .field-value-commercial {
-    font-size: 18px;
-  }
-
-  .field-value-reg {
-    font-size: 16px;
-  }
-
-  .action-card-btn {
-    padding: 12px 14px;
-  }
-
-  .action-card-title {
-    font-size: 12.5px;
-  }
-
-  .action-card-subtitle {
-    font-size: 10.5px;
-  }
-
-  .settings-drawer {
-    max-width: 100%;
-  }
-
-  .modal-container {
-    max-height: 94vh;
-  }
-}
-
-/* Tablet screens (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  .portal-body-wrapper {
-    max-width: 520px;
-    padding: 24px 20px 48px;
-  }
-}
-
-/* Desktop screens (769px and above) */
-@media (min-width: 769px) {
-  .portal-body-wrapper {
-    max-width: 560px;
-    padding: 32px 24px 60px;
-    gap: 24px;
-  }
-
-  .product-card {
-    padding: 36px 24px 24px;
-  }
-
-  .field-value-commercial {
-    font-size: 22px;
-  }
-
-  .action-card-btn {
-    padding: 16px 18px;
-  }
-}
-
-/* Large monitors (1440px and above) */
-@media (min-width: 1440px) {
-  .portal-body-wrapper {
-    max-width: 600px;
-  }
-}
-
-/* Touch devices optimization */
-@media (hover: none) and (pointer: coarse) {
-  .action-card-btn:active {
-    background-color: var(--primary-blue-light);
-  }
-
-  .btn-copy-reg {
-    padding: 6px 10px;
-  }
-}
-
-/* Print styles */
-@media print {
-  .header-actions,
-  .portal-subnav-bar,
-  .document-actions-section,
-  .portal-security-banner,
-  .settings-drawer,
-  .modal-backdrop,
-  .btn-copy-reg,
-  .card-top-meta {
-    display: none !important;
-  }
-
-  .header-container {
-    position: static;
-    border-bottom: 2px solid #000;
-  }
-
-  .product-card {
-    border: 2px solid #000;
-    box-shadow: none;
-    page-break-inside: avoid;
-  }
-
-  .field-divider {
-    background-color: #CCC;
-  }
-
-  body {
-    background-color: #FFF;
-    color: #000;
   }
 }

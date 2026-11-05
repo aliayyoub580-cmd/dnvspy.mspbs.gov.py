@@ -107,3 +107,4 @@ Dnvspy/
 | Texto Secundario | `--text-secondary` | `#89939F` |
 | Borde de Ficha | `--card-border` | `#547DB8` |
 | Borde Claro | `--light-border` | `#E8E8E8` |
+
