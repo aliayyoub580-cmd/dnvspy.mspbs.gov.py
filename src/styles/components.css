@@ -97,7 +97,7 @@
 /* Top line: RS / INFORMACIÓN */
 .top-line {
   position: absolute;
-  top: 72px;
+  top: 30px;
   left: 7.3%;
   color: #243142;
   font-size: 11px;
@@ -109,18 +109,18 @@
 
 .top-line b {
   font-weight: 700;
-  margin: 0 2px;
+  margin: 0 8px;
 }
 
 .top-line span {
   color: #4776a3;
-  margin-left: 7px;
+  margin-left: 0;
 }
 
 /* Settings button: dark navy square flush to right */
 .settings {
   position: absolute;
-  top: 55px;
+  top: 13px;
   right: 0;
   width: 50px;
   height: 51px;
@@ -147,7 +147,7 @@
 /* Institutional Masthead */
 .masthead {
   position: absolute;
-  top: 135px;
+  top: 72px;
   left: 10.7%;
   width: 77.8%;
   height: 90px;
@@ -207,7 +207,7 @@
 .ms-badge {
   position: absolute;
   z-index: 5;
-  top: 176px;
+  top: 113px;
   left: 50%;
   transform: translateX(-50%);
   width: 72px;
@@ -226,7 +226,7 @@
 /* Product Card */
 .product-card {
   position: absolute;
-  top: 221px;
+  top: 158px;
   left: 10.7%;
   width: 77.8%;
   min-height: 599px;

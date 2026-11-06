@@ -46,8 +46,7 @@ export const ProductInformation = () => {
         <main className="page">
           {/* Breadcrumb line: RS / INFORMACIÓN */}
           <div className="top-line">
-            RS <b>/</b>
-            <span>INFORMACIÓN</span>
+            RS<b>/</b><span>INFORMACIÓN</span>
           </div>
 
           {/* Settings button: Dark navy square flush with right edge */}
