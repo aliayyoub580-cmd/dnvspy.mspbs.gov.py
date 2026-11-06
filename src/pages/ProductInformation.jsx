@@ -182,35 +182,7 @@ export const ProductInformation = () => {
         </main>
 
         {/* Mobile Browser Bottom Bar (Matching screenshot) */}
-        <footer className="browser-bottom-bar" aria-label="Navegador móvil">
-          <button type="button" className="browser-nav-btn" aria-label="Atrás">
-            <i className="fa-solid fa-chevron-left" />
-          </button>
 
-          <div className="browser-url-pill">
-            <div className="url-left">
-              <i className="fa-regular fa-clone url-icon" />
-              <span className="url-text">dnvspy.mspbs.gov.py</span>
-            </div>
-            <button
-              type="button"
-              className="url-refresh-btn"
-              onClick={() => window.location.reload()}
-              aria-label="Recargar página"
-            >
-              <i className="fa-solid fa-rotate-right" />
-            </button>
-          </div>
-
-          <button
-            type="button"
-            className="browser-nav-btn"
-            onClick={() => setIsSettingsOpen(true)}
-            aria-label="Más opciones"
-          >
-            <i className="fa-solid fa-ellipsis" />
-          </button>
-        </footer>
       </div>
 
       {/* Interactive Document Modal */}
@@ -382,3 +354,4 @@ export const ProductInformation = () => {
 };
 
 export default ProductInformation;
+

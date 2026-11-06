@@ -14,7 +14,9 @@
     border: 1px solid #dce2e9;
   }
 
-  .mobile-top, .header-rule, .browser-bottom-bar {
+  .mobile-top,
+  .header-rule,
+  .browser-bottom-bar {
     width: 100%;
   }
 
@@ -24,83 +26,129 @@
 }
 
 @media (max-width: 494px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+    min-height: 100%;
+    scrollbar-width: none !important;
+    scrollbar-color: transparent transparent !important;
+    -ms-overflow-style: none !important;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  .app-wrapper::-webkit-scrollbar,
+  .device-container::-webkit-scrollbar,
+  .page::-webkit-scrollbar,
+  *::-webkit-scrollbar-track,
+  *::-webkit-scrollbar-thumb {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .app-wrapper {
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
   .device-container {
     width: 100%;
     min-height: 100vh;
+    height: auto;
     box-shadow: none;
     border-radius: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .page {
-    min-height: calc(100vh - 129px);
-  }
-}
-
-@media (max-width: 380px) {
-  .top-line {
-    top: 54px;
-    font-size: 10px;
+    min-height: 870px;
+    height: auto;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
-  .settings {
-    top: 42px;
-    width: 44px;
-    height: 48px;
-  }
-
-  .settings i {
-    font-size: 20px;
-  }
-
+  /* Responsive Masthead: fluid font and padding so no text clips on mobile */
   .masthead {
-    top: 102px;
+    left: 8.5%;
+    width: 83%;
+  }
+
+  .mast-left {
+    padding-right: 0.75rem;
+    font-size: clamp(21px, 5.2vw, 24px);
+  }
+
+  .mast-right {
+    padding-left: 0.75rem;
+    font-size: clamp(21px, 5.2vw, 24px);
+    white-space: nowrap;
+  }
+
+  .mast-left small,
+  .mast-right small {
+    font-size: 8.5px;
   }
 
   .ms-badge {
-    top: 151px;
-    width: 62px;
-    height: 62px;
-    font-size: 24px;
+    width: clamp(64px, 16vw, 72px);
+    height: clamp(64px, 16vw, 72px);
+    font-size: clamp(24px, 6vw, 28px);
   }
 
   .product-card {
-    top: 188px;
-    min-height: 560px;
-    padding: 27px 12px 18px;
+    left: 8.5%;
+    width: 83%;
+    padding: 30px 14px 20px;
   }
 
   .product-type {
-    font-size: 12px;
+    font-size: clamp(12.5px, 3.4vw, 14px);
   }
 
   .registration {
-    margin-top: 28px;
-    font-size: 15px;
+    font-size: clamp(15px, 4.2vw, 17px);
   }
 
   .company {
-    margin-top: 30px;
-    font-size: 14px;
+    font-size: clamp(14px, 3.8vw, 17px);
   }
 
   .details {
-    margin-top: 27px;
-    font-size: 13px;
+    font-size: clamp(13.5px, 3.8vw, 16px);
+  }
+}
+
+@media (max-width: 360px) {
+  .masthead {
+    left: 6%;
+    width: 88%;
   }
 
-  .details p {
-    margin-bottom: 20px;
+  .mast-left {
+    padding-right: 0.5rem;
+    font-size: 16px;
   }
 
-  .documents {
-    margin-top: 27px;
+  .mast-right {
+    padding-left: 0.5rem;
+    font-size: 16px;
   }
 
-  .doc-copy {
-    font-size: 10px;
-  }
-
-  .doc-row.notice .doc-copy {
-    font-size: 9px;
+  .product-card {
+    left: 6%;
+    width: 88%;
+    padding: 28px 10px 18px;
   }
 }
