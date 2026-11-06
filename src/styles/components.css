@@ -47,8 +47,15 @@
 
 .brand-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   user-select: none;
+}
+
+.brand-logo-svg {
+  display: block;
+  height: 22px;
+  width: auto;
+  max-width: 160px;
 }
 
 .brand-name {
