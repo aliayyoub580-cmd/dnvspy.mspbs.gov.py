@@ -52,18 +52,21 @@
 }
 
 .brand-name {
-  color: #152b5a;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  color: #0c1e4e;
+  font-family: Verdana, "Atkinson Hyperlegible", Geneva, sans-serif;
   font-size: 23px;
-  font-weight: 900;
-  letter-spacing: -0.65px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 1;
 }
 
 .brand-suffix {
-  color: #4778ad;
-  font-family: "Roboto Condensed", Arial, sans-serif;
-  font-size: 22px;
+  color: #4e82c6;
+  font-family: Verdana, "Atkinson Hyperlegible", Geneva, sans-serif;
+  font-size: 23px;
   font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 1;
   margin-left: 1px;
 }
 
